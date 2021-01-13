@@ -2,7 +2,7 @@
  * @Author: SingleBiu
  * @Date: 2021-01-13 14:32:46
  * @LastEditors: SingleBiu
- * @LastEditTime: 2021-01-13 14:37:19
+ * @LastEditTime: 2021-01-13 14:38:56
  * @Description: 交换数组数的位置，奇数放前面偶数放后面
  */
 #include<stdio.h>
