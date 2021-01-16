@@ -2,7 +2,7 @@
  * @Author: SingleBiu
  * @Date: 2021-01-12 19:32:51
  * @LastEditors: SingleBiu
- * @LastEditTime: 2021-01-16 10:16:33
+ * @LastEditTime: 2021-01-16 16:26:46
  * @Description: file content
 -->
 # C_tasks
@@ -46,3 +46,5 @@ C语言编程题练习
 9、 输入十六进制[0-9a-zA-Z]输出相应的int
 
 10、计算当天距年末还有多少天
+
+11、求两个数最大公约数与最小公倍数
