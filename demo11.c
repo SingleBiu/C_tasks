@@ -2,7 +2,11 @@
  * @Author: SingleBiu
  * @Date: 2021-01-16 15:32:52
  * @LastEditors: SingleBiu
+<<<<<<< HEAD
  * @LastEditTime: 2021-01-16 16:28:21
+=======
+ * @LastEditTime: 2021-01-16 16:14:07
+>>>>>>> 5eba0d6f82ba8664308cebe6e34710b79f87d3d3
  * @Description: 求两个数最大公约数
  */
 
