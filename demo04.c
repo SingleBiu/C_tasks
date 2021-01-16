@@ -2,7 +2,7 @@
  * @Author: SingleBiu
  * @Date: 2021-01-12 17:03:04
  * @LastEditors: SingleBiu
- * @LastEditTime: 2021-01-12 19:14:18
+ * @LastEditTime: 2021-01-16 11:23:39
  * @Description: 将100~999之间的水仙花数打印出来
  */
 
@@ -10,7 +10,8 @@
 #include<stdlib.h>
 #include<math.h>
 
-#define uint unsigned int
+typedef int unsigned uint;
+
 int main(){
     uint ge,shi,bai;
     for (uint num = 100; num < 1000; num++)  
