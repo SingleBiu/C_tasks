@@ -2,7 +2,7 @@
  * @Author: SingleBiu
  * @Date: 2021-01-12 19:32:51
  * @LastEditors: SingleBiu
- * @LastEditTime: 2021-01-16 18:45:35
+ * @LastEditTime: 2021-01-16 19:33:59
  * @Description: file content
 -->
 /*
@@ -60,3 +60,5 @@ C语言编程题练习
 12、求1000以内所有的完数
 
 13、将一个数分解为连续的正整数之和
+
+14、将一个正整数分解质因数
