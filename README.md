@@ -2,15 +2,7 @@
  * @Author: SingleBiu
  * @Date: 2021-01-12 19:32:51
  * @LastEditors: SingleBiu
- * @LastEditTime: 2021-01-16 19:58:11
- * @Description: file content
--->
-/*
- * @Author: SingleBiu
- * @Date: 2021-01-16 15:32:52
- * @LastEditors: SingleBiu
-<<<<<<< HEAD
- * @LastEditTime: 2021-01-16 16:26:46
+ * @LastEditTime: 2021-01-16 20:00:02
  * @Description: file content
 -->
 # C_tasks
