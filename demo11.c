@@ -2,7 +2,7 @@
  * @Author: SingleBiu
  * @Date: 2021-01-16 15:32:52
  * @LastEditors: SingleBiu
- * @LastEditTime: 2021-01-16 16:12:41
+ * @LastEditTime: 2021-01-16 16:14:07
  * @Description: 求两个数最大公约数
  */
 
