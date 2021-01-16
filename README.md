@@ -2,7 +2,7 @@
  * @Author: SingleBiu
  * @Date: 2021-01-12 19:32:51
  * @LastEditors: SingleBiu
- * @LastEditTime: 2021-01-16 16:58:29
+ * @LastEditTime: 2021-01-16 18:45:35
  * @Description: file content
 -->
 /*
@@ -58,3 +58,5 @@ C语言编程题练习
 11、求两个数最大公约数与最小公倍数
 
 12、求1000以内所有的完数
+
+13、将一个数分解为连续的正整数之和
