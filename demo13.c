@@ -2,7 +2,7 @@
  * @Author: SingleBiu
  * @Date: 2021-01-16 18:14:20
  * @LastEditors: SingleBiu
- * @LastEditTime: 2021-01-16 18:46:18
+ * @LastEditTime: 2021-01-18 16:56:11
  * @Description: 将一个数分解为连续的正整数之和
  *              15 = 1+2+3+4+5
  *                 = 4+5+6
@@ -38,7 +38,7 @@ int main()
             }
         }
     }
-    printf("Unaccessable\n");
+    printf("End\n");
     system("pause");
     return 0;
 }
