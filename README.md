@@ -2,7 +2,7 @@
  * @Author: SingleBiu
  * @Date: 2021-01-12 19:32:51
  * @LastEditors: SingleBiu
- * @LastEditTime: 2021-01-19 19:27:44
+ * @LastEditTime: 2021-01-20 20:28:41
  * @Description: file content
 -->
 # C_tasks
@@ -61,4 +61,6 @@ C语言编程题练习
 14、将一个正整数分解质因数
 
 15、求任意数的任意次方的最后三位数
+
+16、求一个二维数组中山顶元素的个数
 
