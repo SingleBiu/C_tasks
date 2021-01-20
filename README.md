@@ -2,7 +2,7 @@
  * @Author: SingleBiu
  * @Date: 2021-01-12 19:32:51
  * @LastEditors: SingleBiu
- * @LastEditTime: 2021-01-20 20:28:41
+ * @LastEditTime: 2021-01-20 20:29:19
  * @Description: file content
 -->
 # C_tasks
@@ -63,4 +63,6 @@ C语言编程题练习
 15、求任意数的任意次方的最后三位数
 
 16、求一个二维数组中山顶元素的个数
+
+17、求一个二维数组的鞍点
 
