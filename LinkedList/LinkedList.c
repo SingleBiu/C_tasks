@@ -2,7 +2,7 @@
  * @Author: SingleBiu
  * @Date: 2021-06-30 11:26:20
  * @LastEditors: SingleBiu
- * @LastEditTime: 2021-06-30 20:29:02
+ * @LastEditTime: 2021-07-01 09:44:34
  * @Description: file content
  */
 #include"LinkedList.h"
@@ -152,47 +152,69 @@ void print_Node(Node *h)
 //作业1  一个有正有负的链表，负数放前面，正数放后面
 Node *move(Node *h)
 {
-    Node *pr,*pk = NULL;
-    Node *last,*tmp  = NULL;
-    // h中没有结点
+    Node *first = NULL; //指向摘除后，负数链表的第一个结点
+    Node *last = NULL;  //指向摘除后，负数链表的最后一个结点
+    Node *pr = NULL;    //px的前一个结点
+    Node *px = NULL;    //原链表中下一个要摘除的结点
+    
+
     if (h == NULL)
-    {
-        return NULL;
-    }
-    // h中只有一个结点
-    if (h->next == NULL)
     {
         return h;
     }
-    // h中有两个及以上结点
-    last= h;
-    while (last)
-    {
-        last = last->next;
-    }
-    // 跳出循环时 last指向h中最后一个结点
-    tmp = h;
-    while (1)
-    {
-        pk = tmp;
-        while (pk <= 0)
+    Node *ps = h; //下一次搜索的起始结点
+    px = ps;
+
+    while(1){
+
+        while (px)
         {
-            // 找到第一个正数
-            pr = pk;
-            pk = pk->next;
+            if (px->data < 0)
+            {
+                break;
+            }
+            pr = px;
+            px = px->next;
         }
-        //下次查找时从pk的下一位开始查找
-        tmp = pk->next;
-        if (tmp == NULL)
+        
+        if (px == NULL) //没有找到负数结点
         {
-            //pk的下一位为空 跳出循环
-            return h;
+            if (first == NULL)
+            {
+                return h;
+            }
+            else
+            {
+                last->next = h;
+                return first;
+            }
         }
-        // 否则 pr指向pk的下一位
-        pr->next = pk->next;
-        // last 指向pk
-        last = pk;
-        pk->next = NULL;
+        else  //找到下一个负数结点
+        {
+            ps = px->next; //下一次搜索的起始结点
+
+            if (px == h) //要摘除的结点是原链表的第一个结点
+            {
+                h = h->next;
+                px->next = NULL;
+            }
+            else //要摘除的结点不是原链表的第一个结点
+            {
+                pr->next = px->next;
+                px->next = NULL;
+            }
+            // 把改负数结点按 尾插法 加入到新负数链表中去
+            if (first == NULL)
+            {
+                first = px;
+                last = px;
+            }
+            else
+            {
+                last->next = px;
+                last = px;
+            }
+        }
     }
 }
 
