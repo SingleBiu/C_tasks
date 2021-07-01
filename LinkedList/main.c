@@ -2,7 +2,7 @@
  * @Author: SingleBiu
  * @Date: 2021-06-30 15:27:02
  * @LastEditors: SingleBiu
- * @LastEditTime: 2021-06-30 15:59:50
+ * @LastEditTime: 2021-07-01 08:38:56
  * @Description: file content
  */
 #include<stdlib.h>
@@ -31,6 +31,9 @@ int main(int argc, char const *argv[])
     }
     
     print_Node(h);
+    // move(h);
+    // h = reverse_Node(h);
+    // print_Node(h);
 
     return 0;
 }

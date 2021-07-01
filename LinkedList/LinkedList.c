@@ -219,30 +219,3 @@ Node *reverse_Node(Node *h)
     return pr;
 }
 
-int main(int argc, char const *argv[])\
-{
-    int num;
-    Node *h = NULL;
-
-    while (1)
-    {
-        scanf("%d",&num);
-        if (num == 0)
-        {
-            break;
-        }
-        
-        Node *p = (Node*)malloc(sizeof(*p));
-        p->data = num;
-        p->next = NULL;
-
-        h = insert(h,p);
-
-    }
-    print_Node(h);
-    // move(h);
-    h = reverse_Node(h);
-    print_Node(h);
-    system("pause");
-    return 0;
-}
