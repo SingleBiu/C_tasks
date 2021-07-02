@@ -2,7 +2,7 @@
  * @Author: SingleBiu
  * @Date: 2021-07-01 18:55:31
  * @LastEditors: SingleBiu
- * @LastEditTime: 2021-07-01 20:36:07
+ * @LastEditTime: 2021-07-02 08:47:00
  * @Description: 不带头结点的双向链表
  */
 #include<stdio.h>
@@ -134,14 +134,14 @@ LinkedList *insert_Node_Ascending(LinkedList *h,LinkedList *p)
     
 }
 
-LinkedList *delete_All_X_Node(LinkedList *h ,LinkedList *p)
+LinkedList *delete_All_X_Node(LinkedList *h ,ElemType val)
 {
     if (h == NULL)
     {
         return NULL;
     }
     
-    if (p == NULL)
+    if (val == NULL)
     {
         return h;
     }
@@ -155,7 +155,7 @@ LinkedList *delete_All_X_Node(LinkedList *h ,LinkedList *p)
     
         while (pk)
         {
-            if(pk->data == p->data)
+            if(pk->data == val)
             {
                 break;
             }
@@ -169,7 +169,6 @@ LinkedList *delete_All_X_Node(LinkedList *h ,LinkedList *p)
 
         ps = pk->next;
         
-        //FIXME:
         if (pk == h)  //是头结点
         {
             
@@ -260,14 +259,11 @@ int main(int argc, char const *argv[])
 
     print_All_Node(h);
 
-    printf("\nPrepare to delete:");
-    scanf("%d",&data);
-    LinkedList *del = NULL;
-    del = (LinkedList*)malloc(sizeof(del));
-    del->data = data;
-    delete_All_X_Node(h,del);
 
-    print_All_Node(h);
+    // printf("\nPrepare to delete:");
+    // scanf("%d",&data);
+    // h = delete_All_X_Node(h,data);
+    // print_All_Node(h);
 
     system("pause");
 
