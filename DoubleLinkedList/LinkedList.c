@@ -2,7 +2,7 @@
  * @Author: SingleBiu
  * @Date: 2021-07-01 18:55:31
  * @LastEditors: SingleBiu
- * @LastEditTime: 2021-07-02 08:47:00
+ * @LastEditTime: 2021-07-02 09:01:16
  * @Description: 不带头结点的双向链表
  */
 #include<stdio.h>
@@ -141,7 +141,7 @@ LinkedList *delete_All_X_Node(LinkedList *h ,ElemType val)
         return NULL;
     }
     
-    if (val == NULL)
+    if (val == 0)
     {
         return h;
     }
